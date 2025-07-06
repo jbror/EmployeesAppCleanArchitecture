@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeesApp.Infrastructure\EmployeesApp.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

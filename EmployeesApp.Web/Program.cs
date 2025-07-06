@@ -12,6 +12,7 @@ namespace EmployeesApp.Web
             
 
             builder.Services.AddSingleton<IEmployeeService, EmployeeService>(); // Kör med "original" data
+            
             //builder.Services.AddSingleton<IEmployeeService, OtherEmployeeService>();  // Kör med "test" data
 
 
