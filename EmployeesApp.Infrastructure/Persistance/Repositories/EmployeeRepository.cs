@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 using EmployeesApp.Application.Employees.Interfaces;
 
 
+
 namespace EmployeesApp.Infrastructure.Persistance.Repositories;
 
-public class EmployeeReposistory : IEmployeeReposistory
+public class EmployeeRepository : IEmployeeRepository
 {
 
     private readonly List<Employee> employees = new()

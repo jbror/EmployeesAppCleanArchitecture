@@ -1,8 +1,8 @@
-﻿using EmployeesApp.Web.Models;
+﻿using EmployeesApp.Domain.Entities;
 
 namespace EmployeesApp.Web.Services
 {
-    public interface IEmployeeReposistory
+    public interface IEmployeeRepository
     {
         void Add(Employee employee);
         Employee[] GetAll();

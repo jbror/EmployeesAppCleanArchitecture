@@ -46,7 +46,7 @@ public class EmployeeService : IEmployeeService
 
 
 
-    public class EmployeeReposistory : IEmployeeReposistory
+    public class EmployeeReposistory : IEmployeeRepository
     {
 
         private readonly List<Employee> employees = new()
