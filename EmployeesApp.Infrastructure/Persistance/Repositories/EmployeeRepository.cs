@@ -1,9 +1,15 @@
-﻿using EmployeesApp.Application.Employees.Interfaces;
-using EmployeesApp.Domain.Entities;
+﻿using EmployeesApp.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EmployeesApp.Application.Employees.Interfaces;
 
-namespace EmployeesApp.Application.Employees.Services;
 
-public class EmployeeService : IEmployeeService
+namespace EmployeesApp.Infrastructure.Persistance.Repositories;
+
+public class EmployeeReposistory : IEmployeeReposistory
 {
 
     private readonly List<Employee> employees = new()
@@ -24,8 +30,8 @@ public class EmployeeService : IEmployeeService
         nextId++;
         employees.Add(employee);
 
-       // File.WriteAllText(@"C:\Users\bror\Documents\kaka.txt", $"Adding employee {employee.Id}");
-            
+        //File.WriteAllText(@"C:\Users\bror\Documents\kaka.txt", $"Adding employee {employee.Id}");
+
     }
 
     public Employee[] GetAll()
@@ -40,9 +46,9 @@ public class EmployeeService : IEmployeeService
     }
 
 
- 
 
-    
+
+
 
 
 
