@@ -1,3 +1,7 @@
+
+using EmployeesApp.Application.Employees.Interfaces;
+using EmployeesApp.Application.Employees.Services;
+
 using EmployeesApp.Infrastructure.Persistance.Repositories;
 using EmployeesApp.Web.Services;
 
@@ -7,10 +11,11 @@ namespace EmployeesApp.Web
     {
         public static void Main(string[] args)
         {
+                      
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
-
-
+            
+            builder.Services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
 
             builder.Services.AddSingleton<IEmployeeService, EmployeeService>(); // Kör med "original" data
             
