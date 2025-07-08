@@ -1,11 +1,10 @@
 ﻿using EmployeesApp.Domain.Entities;
 
-namespace EmployeesApp.Web.Services
+namespace EmployeesApp.Application.Employees.Interfaces;
+
+public interface IEmployeeRepository
 {
-    public interface IEmployeeRepository
-    {
-        void Add(Employee employee);
-        Employee[] GetAll();
-        Employee? GetById(int id);
-    }
+    void Add(Employee employee);
+    Employee[] GetAll();
+    Employee? GetById(int id);
 }

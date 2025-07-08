@@ -3,7 +3,6 @@ using EmployeesApp.Application.Employees.Interfaces;
 using EmployeesApp.Application.Employees.Services;
 
 using EmployeesApp.Infrastructure.Persistance.Repositories;
-using EmployeesApp.Web.Services;
 
 namespace EmployeesApp.Web
 {
