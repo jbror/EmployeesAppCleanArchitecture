@@ -6,9 +6,11 @@ namespace EmployeesApp.Application.Employees.Services;
 public class EmployeeService : IEmployeeService
 {
     private readonly IEmployeeRepository _employeeRepository;
+    private int _nextId = 4;
 
     public EmployeeService(IEmployeeRepository employeeRepository)
     {
+
         _employeeRepository = employeeRepository;
     }
 
@@ -16,7 +18,8 @@ public class EmployeeService : IEmployeeService
     public void Add(Employee employee)
     {
 
-        
+        employee.Id = _nextId;
+        _nextId++;
         _employeeRepository.Add(employee);        
 
         // File.WriteAllText(@"C:\Users\bror\Documents\kaka.txt", $"Adding employee {employee.Id}");

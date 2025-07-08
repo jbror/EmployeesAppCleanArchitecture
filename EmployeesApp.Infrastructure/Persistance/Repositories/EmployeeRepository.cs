@@ -20,15 +20,14 @@ public class EmployeeRepository : IEmployeeRepository
         new Employee {Id = 3, Name = "Neo", Email = "neo_03@matrix.com"}
 
     };
-    private int nextId = 4; // Första lediga Id
+   
 
     public void Add(Employee employee)
     {
 
         //employees.Add(employee);
 
-        employee.Id = nextId;
-        nextId++;
+        
         employees.Add(employee);
 
         //File.WriteAllText(@"C:\Users\bror\Documents\kaka.txt", $"Adding employee {employee.Id}");
