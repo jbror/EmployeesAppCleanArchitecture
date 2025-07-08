@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using EmployeesApp.Web.Models;
 using EmployeesApp.Web.Models.ViewModels;
 using Microsoft.Extensions.Logging;
+using EmployeesApp.Application.Employees.Interfaces;
 
 namespace EmployeesApp.Web.Controllers;
 
