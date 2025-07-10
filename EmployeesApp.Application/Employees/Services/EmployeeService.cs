@@ -6,7 +6,7 @@ namespace EmployeesApp.Application.Employees.Services;
 public class EmployeeService : IEmployeeService
 {
     private readonly IEmployeeRepository _employeeRepository;
-    private int _nextId = 4;
+    private int _nextId = 4; 
 
     public EmployeeService(IEmployeeRepository employeeRepository)
     {

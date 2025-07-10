@@ -14,8 +14,14 @@ internal class Program
         var employeeService = new EmployeeService(employeeRepository);
 
 
+        var employees = employeeService.GetAll();
 
 
+        Console.WriteLine("This is the names of our employees");
+        foreach (var e in employees)
+        {
+            Console.WriteLine($" - {e.Name}");
+        }
 
 
 
